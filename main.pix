@@ -2938,10 +2938,76 @@
                     <EnableStatus>true</EnableStatus>
                     <ExceptionHandlingMode>Default</ExceptionHandlingMode>
                     <RetryCount>-1</RetryCount>
-                    <Text>new user</Text>
+                    <Text>Add new user</Text>
                     <_activityFullName>BR.Core.Base.ElseIf</_activityFullName>
                   </AbstractStep>
                   <AbstractStep z:Id="i333" i:type="ExecutedStep">
+                    <Childs>
+                      <AbstractStep z:Id="i334" i:type="ExecutedStep">
+                        <Childs />
+                        <Id>0a7f689e-f793-41ae-a8f6-e80dca99edc0</Id>
+                        <Parent z:Ref="i333" />
+                        <PropertyValues>
+                          <PropertyValue z:Id="i335">
+                            <PropertyName>FilePath</PropertyName>
+                            <_dataType>Expression</_dataType>
+                            <_expression>@"parse_schedule.pix"</_expression>
+                            <_value i:nil="true" />
+                            <_xpathSettings xmlns:d15p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                          </PropertyValue>
+                          <PropertyValue z:Id="i336">
+                            <PropertyName>Parameters</PropertyName>
+                            <_dataType>Value</_dataType>
+                            <_expression i:nil="true" />
+                            <_value xmlns:d15p1="http://schemas.datacontract.org/2004/07/BR.Core" i:type="d15p1:ArrayOfArgumentItem">
+                              <d15p1:ArgumentItem z:Id="i337">
+                                <d15p1:ArgumentName>group</d15p1:ArgumentName>
+                                <d15p1:Expression>group</d15p1:Expression>
+                                <d15p1:Type i:nil="true" />
+                              </d15p1:ArgumentItem>
+                              <d15p1:ArgumentItem z:Id="i338">
+                                <d15p1:ArgumentName>Schedule</d15p1:ArgumentName>
+                                <d15p1:Expression>Schedule</d15p1:Expression>
+                                <d15p1:Type i:nil="true" />
+                              </d15p1:ArgumentItem>
+                            </_value>
+                            <_xpathSettings xmlns:d15p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                          </PropertyValue>
+                          <PropertyValue z:Id="i339">
+                            <PropertyName>Timeout</PropertyName>
+                            <_dataType>Value</_dataType>
+                            <_expression i:nil="true" />
+                            <_value xmlns:d15p1="http://www.w3.org/2001/XMLSchema" i:type="d15p1:int">0</_value>
+                            <_xpathSettings xmlns:d15p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                          </PropertyValue>
+                        </PropertyValues>
+                        <SelectedOptionId i:nil="true" />
+                        <EnableStatus>true</EnableStatus>
+                        <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                        <RetryCount>-1</RetryCount>
+                        <Text></Text>
+                        <_activityFullName>BR.Core.Base.ExecuteScript</_activityFullName>
+                      </AbstractStep>
+                    </Childs>
+                    <Id>bd50a957-495f-4ada-8dab-a53c23f8e96a</Id>
+                    <Parent z:Ref="i32" />
+                    <PropertyValues>
+                      <PropertyValue z:Id="i340">
+                        <PropertyName>Condition</PropertyName>
+                        <_dataType>Expression</_dataType>
+                        <_expression>current_state == "logged_in"</_expression>
+                        <_value i:nil="true" />
+                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                      </PropertyValue>
+                    </PropertyValues>
+                    <SelectedOptionId i:nil="true" />
+                    <EnableStatus>true</EnableStatus>
+                    <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                    <RetryCount>-1</RetryCount>
+                    <Text></Text>
+                    <_activityFullName>BR.Core.Base.ElseIf</_activityFullName>
+                  </AbstractStep>
+                  <AbstractStep z:Id="i341" i:type="ExecutedStep">
                     <Childs />
                     <Id>27cabcf0-120f-4640-9ced-e223a44da0fa</Id>
                     <Parent z:Ref="i32" />
@@ -2957,7 +3023,7 @@
                 <Id>b9d548c2-91a4-4222-8121-592bc4241f97</Id>
                 <Parent z:Ref="i21" />
                 <PropertyValues>
-                  <PropertyValue z:Id="i334">
+                  <PropertyValue z:Id="i342">
                     <PropertyName>Condition</PropertyName>
                     <_dataType>Expression</_dataType>
                     <_expression>current_state == "launch"</_expression>
@@ -2972,33 +3038,33 @@
                 <Text>Launch</Text>
                 <_activityFullName>BR.Core.Base.If</_activityFullName>
               </AbstractStep>
-              <AbstractStep z:Id="i335" i:type="ExecutedStep">
+              <AbstractStep z:Id="i343" i:type="ExecutedStep">
                 <Childs />
                 <Id>a6b33ac6-99e9-42e7-b479-c8969f06cbde</Id>
                 <Parent z:Ref="i21" />
                 <PropertyValues>
-                  <PropertyValue z:Id="i336">
+                  <PropertyValue z:Id="i344">
                     <PropertyName>Text</PropertyName>
                     <_dataType>Expression</_dataType>
                     <_expression>current_state</_expression>
                     <_value i:nil="true" />
                     <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                   </PropertyValue>
-                  <PropertyValue z:Id="i337">
+                  <PropertyValue z:Id="i345">
                     <PropertyName>Title</PropertyName>
                     <_dataType>Expression</_dataType>
                     <_expression>"STATE"</_expression>
                     <_value i:nil="true" />
                     <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                   </PropertyValue>
-                  <PropertyValue z:Id="i338">
+                  <PropertyValue z:Id="i346">
                     <PropertyName>Timeout</PropertyName>
                     <_dataType>Expression</_dataType>
                     <_expression>0</_expression>
                     <_value i:nil="true" />
                     <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                   </PropertyValue>
-                  <PropertyValue z:Id="i339">
+                  <PropertyValue z:Id="i347">
                     <PropertyName>TopMost</PropertyName>
                     <_dataType>Value</_dataType>
                     <_expression i:nil="true" />
@@ -3017,35 +3083,35 @@
             <Id>74b82e8f-b3bf-434b-9a85-3a6d8a117558</Id>
             <Parent z:Ref="i20" />
             <PropertyValues>
-              <PropertyValue z:Id="i340">
+              <PropertyValue z:Id="i348">
                 <PropertyName>Message</PropertyName>
                 <_dataType>Expression</_dataType>
                 <_expression>message</_expression>
                 <_value i:nil="true" />
                 <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
               </PropertyValue>
-              <PropertyValue z:Id="i341">
+              <PropertyValue z:Id="i349">
                 <PropertyName>UserName</PropertyName>
                 <_dataType>Expression</_dataType>
                 <_expression>user</_expression>
                 <_value i:nil="true" />
                 <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
               </PropertyValue>
-              <PropertyValue z:Id="i342">
+              <PropertyValue z:Id="i350">
                 <PropertyName>UserId</PropertyName>
                 <_dataType>Expression</_dataType>
                 <_expression>userID</_expression>
                 <_value i:nil="true" />
                 <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
               </PropertyValue>
-              <PropertyValue z:Id="i343">
+              <PropertyValue z:Id="i351">
                 <PropertyName>ChatID</PropertyName>
                 <_dataType>Expression</_dataType>
                 <_expression>chatID</_expression>
                 <_value i:nil="true" />
                 <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
               </PropertyValue>
-              <PropertyValue z:Id="i344">
+              <PropertyValue z:Id="i352">
                 <PropertyName>MessageID</PropertyName>
                 <_dataType>Expression</_dataType>
                 <_expression>messageID</_expression>
@@ -3060,68 +3126,68 @@
             <Text></Text>
             <_activityFullName>Activities.Telegram.OnMessage</_activityFullName>
           </AbstractStep>
-          <AbstractStep z:Id="i345" i:type="ExecutedStep">
+          <AbstractStep z:Id="i353" i:type="ExecutedStep">
             <Childs />
             <Id>20716a56-e723-4919-b01e-aeff3f58c163</Id>
             <Parent z:Ref="i20" />
             <PropertyValues>
-              <PropertyValue z:Id="i346">
+              <PropertyValue z:Id="i354">
                 <PropertyName>MessageType</PropertyName>
                 <_dataType>Expression</_dataType>
                 <_expression></_expression>
                 <_value i:nil="true" />
                 <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
               </PropertyValue>
-              <PropertyValue z:Id="i347">
+              <PropertyValue z:Id="i355">
                 <PropertyName>FileID</PropertyName>
                 <_dataType>Expression</_dataType>
                 <_expression></_expression>
                 <_value i:nil="true" />
                 <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
               </PropertyValue>
-              <PropertyValue z:Id="i348">
+              <PropertyValue z:Id="i356">
                 <PropertyName>FileName</PropertyName>
                 <_dataType>Expression</_dataType>
                 <_expression></_expression>
                 <_value i:nil="true" />
                 <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
               </PropertyValue>
-              <PropertyValue z:Id="i349">
+              <PropertyValue z:Id="i357">
                 <PropertyName>FileType</PropertyName>
                 <_dataType>Expression</_dataType>
                 <_expression></_expression>
                 <_value i:nil="true" />
                 <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
               </PropertyValue>
-              <PropertyValue z:Id="i350">
+              <PropertyValue z:Id="i358">
                 <PropertyName>Caption</PropertyName>
                 <_dataType>Expression</_dataType>
                 <_expression></_expression>
                 <_value i:nil="true" />
                 <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
               </PropertyValue>
-              <PropertyValue z:Id="i351">
+              <PropertyValue z:Id="i359">
                 <PropertyName>UserName</PropertyName>
                 <_dataType>Expression</_dataType>
                 <_expression></_expression>
                 <_value i:nil="true" />
                 <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
               </PropertyValue>
-              <PropertyValue z:Id="i352">
+              <PropertyValue z:Id="i360">
                 <PropertyName>UserId</PropertyName>
                 <_dataType>Expression</_dataType>
                 <_expression></_expression>
                 <_value i:nil="true" />
                 <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
               </PropertyValue>
-              <PropertyValue z:Id="i353">
+              <PropertyValue z:Id="i361">
                 <PropertyName>ChatID</PropertyName>
                 <_dataType>Expression</_dataType>
                 <_expression></_expression>
                 <_value i:nil="true" />
                 <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
               </PropertyValue>
-              <PropertyValue z:Id="i354">
+              <PropertyValue z:Id="i362">
                 <PropertyName>MessageID</PropertyName>
                 <_dataType>Expression</_dataType>
                 <_expression></_expression>
@@ -3136,61 +3202,61 @@
             <Text></Text>
             <_activityFullName>Activities.Telegram.OnFile</_activityFullName>
           </AbstractStep>
-          <AbstractStep z:Id="i355" i:type="ExecutedStep">
+          <AbstractStep z:Id="i363" i:type="ExecutedStep">
             <Childs />
             <Id>5f564cd8-8d4b-4628-95ab-37b80322a08b</Id>
             <Parent z:Ref="i20" />
             <PropertyValues>
-              <PropertyValue z:Id="i356">
+              <PropertyValue z:Id="i364">
                 <PropertyName>ContactFirstName</PropertyName>
                 <_dataType>Expression</_dataType>
                 <_expression></_expression>
                 <_value i:nil="true" />
                 <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
               </PropertyValue>
-              <PropertyValue z:Id="i357">
+              <PropertyValue z:Id="i365">
                 <PropertyName>ContactLastName</PropertyName>
                 <_dataType>Expression</_dataType>
                 <_expression></_expression>
                 <_value i:nil="true" />
                 <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
               </PropertyValue>
-              <PropertyValue z:Id="i358">
+              <PropertyValue z:Id="i366">
                 <PropertyName>ContactPhoneNumber</PropertyName>
                 <_dataType>Expression</_dataType>
                 <_expression></_expression>
                 <_value i:nil="true" />
                 <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
               </PropertyValue>
-              <PropertyValue z:Id="i359">
+              <PropertyValue z:Id="i367">
                 <PropertyName>ContactTelegramID</PropertyName>
                 <_dataType>Expression</_dataType>
                 <_expression></_expression>
                 <_value i:nil="true" />
                 <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
               </PropertyValue>
-              <PropertyValue z:Id="i360">
+              <PropertyValue z:Id="i368">
                 <PropertyName>UserName</PropertyName>
                 <_dataType>Expression</_dataType>
                 <_expression></_expression>
                 <_value i:nil="true" />
                 <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
               </PropertyValue>
-              <PropertyValue z:Id="i361">
+              <PropertyValue z:Id="i369">
                 <PropertyName>UserId</PropertyName>
                 <_dataType>Expression</_dataType>
                 <_expression></_expression>
                 <_value i:nil="true" />
                 <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
               </PropertyValue>
-              <PropertyValue z:Id="i362">
+              <PropertyValue z:Id="i370">
                 <PropertyName>ChatID</PropertyName>
                 <_dataType>Expression</_dataType>
                 <_expression></_expression>
                 <_value i:nil="true" />
                 <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
               </PropertyValue>
-              <PropertyValue z:Id="i363">
+              <PropertyValue z:Id="i371">
                 <PropertyName>MessageID</PropertyName>
                 <_dataType>Expression</_dataType>
                 <_expression></_expression>
@@ -3209,7 +3275,7 @@
         <Id>6cf891fd-e611-4c76-8307-67d3979533d5</Id>
         <Parent z:Ref="i2" />
         <PropertyValues>
-          <PropertyValue z:Id="i364">
+          <PropertyValue z:Id="i372">
             <PropertyName>ActiveClient</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>schedBot</_expression>
@@ -3238,23 +3304,29 @@
   <Name>main.pix</Name>
   <Namespaces xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
   <Params>
-    <Parameter z:Id="i365">
+    <Parameter z:Id="i373">
       <DefaultValueExpression>""</DefaultValueExpression>
       <Description></Description>
       <Name>login</Name>
       <TypeString>System.String</TypeString>
     </Parameter>
-    <Parameter z:Id="i366">
+    <Parameter z:Id="i374">
       <DefaultValueExpression>""</DefaultValueExpression>
       <Description></Description>
       <Name>group</Name>
       <TypeString>System.String</TypeString>
     </Parameter>
-    <Parameter z:Id="i367">
+    <Parameter z:Id="i375">
       <DefaultValueExpression>""</DefaultValueExpression>
       <Description></Description>
       <Name>new_password</Name>
       <TypeString>System.String</TypeString>
+    </Parameter>
+    <Parameter z:Id="i376">
+      <DefaultValueExpression></DefaultValueExpression>
+      <Description></Description>
+      <Name>Schedule</Name>
+      <TypeString>System.Data.DataTable</TypeString>
     </Parameter>
   </Params>
   <Variables xmlns:d2p1="http://schemas.datacontract.org/2004/07/BR.Logic.Params" />
