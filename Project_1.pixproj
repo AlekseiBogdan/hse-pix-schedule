@@ -6,6 +6,10 @@
       <IsMain>true</IsMain>
       <Path>main.pix</Path>
     </ProjectFileItem>
+    <ProjectFileItem z:Id="i3">
+      <IsMain>false</IsMain>
+      <Path>parse_schedule.pix</Path>
+    </ProjectFileItem>
   </Files>
   <MasterUploadId i:nil="true" />
   <Name>Project_1</Name>
