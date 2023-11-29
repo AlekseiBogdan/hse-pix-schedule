@@ -11,9 +11,9 @@ The schedule is available for the whole week or for one day only.
 
 ## Team "Нейрокотятка"
 
-Main contributors: [Vyatcheslav Sviridov](https://github.com/VSvir), [Alexei Bogdan](https://github.com/AlekseiBogdan)
-
-Supported by: [Karina Zakirova](https://github.com/KarinaZakirova) and [Maxim Shestakov](https://github.com/AcipenserSturio)
+Telegram bot logic - [Vyatcheslav Sviridov](https://github.com/VSvir)
+Data parsing - [Alexei Bogdan](https://github.com/AlekseiBogdan)
+Moral support - [Karina Zakirova](https://github.com/KarinaZakirova) and [Maxim Shestakov](https://github.com/AcipenserSturio)
 
 ## Technology stack
 * PIX RPA
