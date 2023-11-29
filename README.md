@@ -11,9 +11,9 @@ The schedule is available for the whole week or for one day only.
 
 ## Team "Нейрокотятка"
 
-Telegram bot logic - [Vyatcheslav Sviridov](https://github.com/VSvir)
-Data parsing - [Alexei Bogdan](https://github.com/AlekseiBogdan)
-Moral support - [Karina Zakirova](https://github.com/KarinaZakirova) and [Maxim Shestakov](https://github.com/AcipenserSturio)
+* [Vyatcheslav Sviridov](https://github.com/VSvir) - Telegram bot logic
+* [Alexei Bogdan](https://github.com/AlekseiBogdan) - Data parsing
+* [Karina Zakirova](https://github.com/KarinaZakirova) and [Maxim Shestakov](https://github.com/AcipenserSturio) - Moral support
 
 ## Technology stack
 * PIX RPA
